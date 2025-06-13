@@ -1,0 +1,148 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Age Calculator",
+      "path": "/projects/age-calculator",
+      "component": "AgeCalculator",
+      "description": "heloo my calulator",
+      "icon": "",
+      "date_of_creation": ""
+    },
+    {
+      "id": 2,
+      "title": "Background Generator",
+      "path": "/projects/background-generator",
+      "component": "BackgroundGenerator",
+      "description": "heloo my Background Generator",
+      "icon": "",
+      "date_of_creation": ""
+    },
+    {
+      "id": 3,
+      "title": "Contact Form",
+      "path": "/projects/contact-form",
+      "component": "ContactForm",
+      "description": "heloo my Contact Form",
+      "icon": "",
+      "date_of_creation": "26-05-2025"
+    },
+    {
+      "id": 4,
+      "title": "Battery Indicator",
+      "path": "/projects/battery-indicator",
+      "component": "BatteryIndicator",
+      "description": "heloo my Battery Indicator",
+      "icon": "",
+      "date_of_creation": "26-05-2025"
+    },
+    {
+      "id": 5,
+      "title": "Calculator",
+      "path": "/projects/calculator-app",
+      "component": "CalculatorApp",
+      "description": "heloo my Calculator App",
+      "icon": "",
+      "date_of_creation": "26-05-2025"
+    },
+    {
+      "id": 6,
+      "title": "Cat Generator",
+      "component": "CatGenerator",
+      "path": "/projects/cat-generator",
+      "description": "heloo my cat genrator",
+      "icon": "",
+      "date_of_creation": "26-05-2025"
+    },
+    {
+      "id": 7,
+      "title": "Color Guessing Game",
+      "component": "ColorGuessingGame",
+      "path": "/projects/color-guessing-game",
+      "description": "heloo my color guessing game",
+      "icon": "",
+      "date_of_creation": "26-05-2025"
+    },
+    {
+      "id": 8,
+      "title": "Custom Slider",
+      "component": "CustomSlider",
+      "path": "/projects/custom-slider",
+      "description": "heloo my color custom slider",
+      "icon": "",
+      "date_of_creation": "26-05-2025"
+    },
+    {
+      "id": 9,
+      "title": "Digital Clock",
+      "component": "DigitalClock",
+      "path": "/projects/digital-clock",
+      "description": "heloo my color digital clock",
+      "icon": "",
+      "date_of_creation": "26-05-2025"
+    },
+    {
+      "id": 10,
+      "title": "BMI Calculator",
+      "component": "BMICalculator",
+      "path": "/projects/bmi-calculator",
+      "description": "heloo my bmi calculator",
+      "icon": "",
+      "date_of_creation": "26-05-2025"
+    },
+    {
+      "id": 11,
+      "title": "Expand Button",
+      "component": "ExpandButton",
+      "path": "/projects/expand-button",
+      "description": "heloo my expand button",
+      "icon": "",
+      "date_of_creation": "26-05-2025"
+    },
+    {
+      "id": 12,
+      "title": "Blog Application",
+      "component": "BlogApplication",
+      "path": "/projects/blog-application",
+      "description": "heloo my blog application",
+      "icon": "",
+      "date_of_creation": "26-05-2025"
+    },
+    {
+      "id": 13,
+      "title": "Count Down Timer",
+      "component": "CountdownTimer",
+      "path": "/projects/countdown-timer",
+      "description": "heloo my countdown timer",
+      "icon": "",
+      "date_of_creation": "27-05-2025"
+    },
+    {
+      "id": 14,
+      "title": "Compound Interest Calculator",
+      "component": "CompoundInterestCalculator",
+      "path": "/projects/compound-interest-calculator",
+      "description": "heloo my Compound Interest Calculator",
+      "icon": "",
+      "date_of_creation": "27-05-2025"
+    },
+    {
+      "id": 15,
+      "title": "Flim Finder",
+      "component": "FlimFinderLayout",
+      "path": "/projects/flim-finder",
+      "description": "heloo my flim finder",
+      "icon": "",
+      "date_of_creation": "27-05-2025"
+    },
+    {
+      "id": 16,
+      "title": "FAQ Accordion",
+      "component": "FaqAccordion",
+      "path": "/projects/faq-accordion",
+      "description": "heloo my FAQ Accordion",
+      "icon": "",
+      "date_of_creation": "27-05-2025"
+    }
+  ]
+}
