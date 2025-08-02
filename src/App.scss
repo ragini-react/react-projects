@@ -1,0 +1,34 @@
+// App.scss - Main application styles
+// Bootstrap is already imported in index.tsx
+
+// Global app styles using Bootstrap utilities
+.app {
+  // Add any global app-specific styles here
+  // Use Bootstrap classes where possible
+  min-height: 100vh;
+}
+
+// Custom utility classes if needed
+.text-shadow {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+}
+
+// Custom animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}

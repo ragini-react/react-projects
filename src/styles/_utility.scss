@@ -1,0 +1,138 @@
+// Utility classes to complement Bootstrap
+@import 'variable';
+@import 'mixins';
+
+// Glass morphism utilities
+.glass-effect {
+  @include glass-effect;
+}
+
+.glass-card {
+  @include glass-effect;
+  @include card-style;
+}
+
+// Gradient utilities
+.bg-gradient-primary {
+  @include gradient-bg;
+}
+
+.text-gradient {
+  @include gradient-text;
+}
+
+// Text utilities
+.text-shadow {
+  @include text-shadow;
+}
+
+// Hover effects
+.hover-lift {
+  @include hover-lift;
+}
+
+.hover-scale {
+  @include hover-scale;
+}
+
+// Custom scrollbar
+.custom-scrollbar {
+  @include custom-scrollbar;
+}
+
+// Animation utilities
+.fade-in {
+  @include fade-in-animation;
+}
+
+// Loading spinner
+.spinner {
+  @include spinner;
+}
+
+.spinner-sm {
+  @include spinner(1rem);
+}
+
+.spinner-lg {
+  @include spinner(3rem);
+}
+
+// Backdrop blur
+.backdrop-blur {
+  backdrop-filter: blur(10px);
+}
+
+// Custom shadows
+.shadow-custom {
+  box-shadow: $custom-shadow;
+}
+
+// Border radius utilities (extending Bootstrap)
+.rounded-xl {
+  border-radius: $border-radius-xl !important;
+}
+
+.rounded-2xl {
+  border-radius: 1.5rem !important;
+}
+
+.rounded-3xl {
+  border-radius: 2rem !important;
+}
+
+// Spacing utilities for specific use cases
+.p-6 {
+  padding: 3rem !important;
+}
+
+.p-7 {
+  padding: 4rem !important;
+}
+
+.m-6 {
+  margin: 3rem !important;
+}
+
+.m-7 {
+  margin: 4rem !important;
+}
+
+// Flexbox utilities
+.d-flex-center {
+  @include flex-center;
+}
+
+.d-flex-between {
+  @include flex-between;
+}
+
+// Position utilities
+.position-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// Transition utilities
+.transition-base {
+  transition: $transition-base;
+}
+
+.transition-fast {
+  transition: all 0.1s ease-in-out;
+}
+
+.transition-slow {
+  transition: all 0.5s ease-in-out;
+}
+
+// Z-index utilities
+.z-dropdown { z-index: $zindex-dropdown; }
+.z-sticky { z-index: $zindex-sticky; }
+.z-fixed { z-index: $zindex-fixed; }
+.z-modal-backdrop { z-index: $zindex-modal-backdrop; }
+.z-modal { z-index: $zindex-modal; }
+.z-popover { z-index: $zindex-popover; }
+.z-tooltip { z-index: $zindex-tooltip; }

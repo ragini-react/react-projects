@@ -1,0 +1,102 @@
+// Global styles that apply across the entire application
+// These styles complement Bootstrap and provide consistent theming
+
+// Global resets and base styles
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-sans-serif;
+  background-color: $light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: $font-family-monospace;
+}
+
+// Global scrollbar styling
+body {
+  @include custom-scrollbar;
+}
+
+// Bootstrap enhancements
+.btn {
+  transition: $transition-base;
+  
+  &:hover {
+    transform: $hover-transform;
+  }
+}
+
+.card {
+  transition: $transition-base;
+  
+  &:hover {
+    box-shadow: $box-shadow-lg;
+  }
+}
+
+// Form enhancements
+.form-control {
+  @include form-control-custom;
+}
+
+.form-select {
+  @include form-control-custom;
+}
+
+// Global animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Global utility classes for common patterns
+.page-container {
+  min-height: 100vh;
+  @include flex-center;
+  padding: 2rem;
+}
+
+.component-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+// Responsive utilities
+@include media-breakpoint-down(md) {
+  .page-container {
+    padding: 1rem;
+  }
+  
+  .component-wrapper {
+    max-width: 100%;
+  }
+}

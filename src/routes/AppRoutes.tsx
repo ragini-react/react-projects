@@ -23,7 +23,20 @@ import CountdownTimer from "../components/countdown-timer/CountdownTimer";
 import CompoundInterestCalculator from "../components/compound-interest-calculator/CompoundInterestCalculator";
 import FaqAccordion from "../components/faq-accordion/FaqAccordion";
 import FlimFinderLayout from "../components/flim-finder/FlimFinderLayout";
-
+import WeatherApp from "../components/weather-app/WeatherApp";
+import PasswordGenerator from "../components/password-generator/PasswordGenerator";
+import QuizApp from "../components/quiz-app/QuizApp";
+import ExpenseTracker from "../components/expense-tracker/ExpenseTracker";
+import TodoList from "../components/todo-list/TodoList";
+import MusicPlayer from "../components/music-player/MusicPlayer";
+import ImageGallery from "../components/image-gallery/ImageGallery";
+import HabitTracker from "../components/habit-tracker/HabitTracker";
+import RecipeFinder from "../components/recipe-finder/RecipeFinder";
+import UrlShortener from "../components/url-shortener/UrlShortener";
+import PomodoroTimer from "../components/pomodoro-timer/PomodoroTimer";
+import MarkdownEditor from "../components/markdown-editor/MarkdownEditor";
+import QRGenerator from "../components/qr-generator/QRGenerator";
+import ColorPalette from "../components/color-palette/ColorPalette";
 interface IProjectDetails {
   title: string;
   path: string;
@@ -51,6 +64,20 @@ const componentMap: Record<string, React.ComponentType> = {
   CompoundInterestCalculator,
   FaqAccordion,
   FlimFinderLayout,
+  WeatherApp,
+  PasswordGenerator,
+  QuizApp,
+  ExpenseTracker,
+  TodoList,
+  MusicPlayer,
+  ImageGallery,
+  HabitTracker,
+  RecipeFinder,
+  UrlShortener,
+  PomodoroTimer,
+  MarkdownEditor,
+  QRGenerator,
+  ColorPalette,
 };
 
 const AppRoutes = () => {

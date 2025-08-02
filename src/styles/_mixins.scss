@@ -1,0 +1,162 @@
+// Common mixins for consistent styling across components
+@import 'variable';
+
+// Glass morphism effect
+@mixin glass-effect($bg: $glass-bg, $border: $glass-border) {
+  background: $bg;
+  backdrop-filter: $glass-backdrop-filter;
+  border: 1px solid $border;
+}
+
+// Gradient background
+@mixin gradient-bg($gradient: $primary-gradient) {
+  background: $gradient;
+}
+
+// Gradient text effect
+@mixin gradient-text($gradient: $primary-gradient) {
+  background: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+// Text shadow
+@mixin text-shadow($shadow: $text-shadow) {
+  text-shadow: $shadow;
+}
+
+// Hover effects
+@mixin hover-lift($transform: $hover-transform) {
+  transition: $transition-base;
+  
+  &:hover {
+    transform: $transform;
+  }
+}
+
+@mixin hover-scale($scale: $hover-scale) {
+  transition: $transition-base;
+  
+  &:hover {
+    transform: $scale;
+  }
+}
+
+// Custom scrollbar
+@mixin custom-scrollbar($width: 8px, $track-bg: #f1f1f1, $thumb-bg: #c1c1c1, $thumb-hover: #a8a8a8) {
+  &::-webkit-scrollbar {
+    width: $width;
+    height: $width;
+  }
+  
+  &::-webkit-scrollbar-track {
+    background: $track-bg;
+    border-radius: 4px;
+  }
+  
+  &::-webkit-scrollbar-thumb {
+    background: $thumb-bg;
+    border-radius: 4px;
+    
+    &:hover {
+      background: $thumb-hover;
+    }
+  }
+}
+
+// Flexbox utilities
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+// Card styling
+@mixin card-style($padding: 2rem, $radius: $border-radius-xl, $shadow: $custom-shadow) {
+  background: white;
+  border-radius: $radius;
+  padding: $padding;
+  box-shadow: $shadow;
+}
+
+// Button variants
+@mixin btn-gradient($gradient: $primary-gradient) {
+  background: $gradient;
+  border: none;
+  color: white;
+  transition: $transition-base;
+  
+  &:hover {
+    transform: $hover-transform;
+    filter: brightness(1.1);
+  }
+}
+
+// Form control styling
+@mixin form-control-custom($border-color: $border-color, $focus-color: $primary) {
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  transition: $transition-base;
+  
+  &:focus {
+    border-color: $focus-color;
+    box-shadow: 0 0 0 0.2rem rgba($focus-color, 0.25);
+    outline: none;
+  }
+}
+
+// Responsive breakpoints
+@mixin media-breakpoint-up($name) {
+  $min: map-get($grid-breakpoints, $name);
+  @if $min != 0 {
+    @media (min-width: $min) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin media-breakpoint-down($name) {
+  $max: map-get($grid-breakpoints, $name) - 0.02;
+  @media (max-width: $max) {
+    @content;
+  }
+}
+
+// Animation keyframes
+@mixin fade-in-animation($duration: 0.3s, $easing: ease-out) {
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  animation: fadeIn $duration $easing;
+}
+
+// Loading spinner
+@mixin spinner($size: 2rem, $color: $primary) {
+  width: $size;
+  height: $size;
+  border: 3px solid rgba($color, 0.3);
+  border-radius: 50%;
+  border-top-color: $color;
+  animation: spin 1s ease-in-out infinite;
+  
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+}

@@ -5,144 +5,270 @@
       "title": "Age Calculator",
       "path": "/projects/age-calculator",
       "component": "AgeCalculator",
-      "description": "heloo my calulator",
-      "icon": "",
-      "date_of_creation": ""
+      "description": "Calculate your exact age in years, months, and days with this intuitive age calculator. Features include date validation, leap year handling, and detailed age breakdown.",
+      "icon": "🎂",
+      "date_of_creation": "2024-01-15"
     },
     {
       "id": 2,
       "title": "Background Generator",
       "path": "/projects/background-generator",
       "component": "BackgroundGenerator",
-      "description": "heloo my Background Generator",
-      "icon": "",
-      "date_of_creation": ""
+      "description": "Create stunning gradient backgrounds with this interactive generator. Choose colors, adjust angles, and export CSS code for your projects.",
+      "icon": "🎨",
+      "date_of_creation": "2024-01-20"
     },
     {
       "id": 3,
       "title": "Contact Form",
       "path": "/projects/contact-form",
       "component": "ContactForm",
-      "description": "heloo my Contact Form",
-      "icon": "",
-      "date_of_creation": "26-05-2025"
+      "description": "Professional contact form with validation, email integration, and responsive design. Includes form validation, error handling, and success notifications.",
+      "icon": "📧",
+      "date_of_creation": "2024-01-25"
     },
     {
       "id": 4,
       "title": "Battery Indicator",
       "path": "/projects/battery-indicator",
       "component": "BatteryIndicator",
-      "description": "heloo my Battery Indicator",
-      "icon": "",
-      "date_of_creation": "26-05-2025"
+      "description": "Visual battery level indicator with charging animation. Features dynamic color changes, percentage display, and smooth charging effects.",
+      "icon": "🔋",
+      "date_of_creation": "2024-02-01"
     },
     {
       "id": 5,
       "title": "Calculator",
       "path": "/projects/calculator-app",
       "component": "CalculatorApp",
-      "description": "heloo my Calculator App",
-      "icon": "",
-      "date_of_creation": "26-05-2025"
+      "description": "Full-featured calculator with basic arithmetic operations, memory functions, and keyboard support. Clean interface with error handling.",
+      "icon": "🧮",
+      "date_of_creation": "2024-02-05"
     },
     {
       "id": 6,
       "title": "Cat Generator",
       "component": "CatGenerator",
       "path": "/projects/cat-generator",
-      "description": "heloo my cat genrator",
-      "icon": "",
-      "date_of_creation": "26-05-2025"
+      "description": "Generate adorable random cat images with this fun application. Features different cat breeds, image caching, and social sharing capabilities.",
+      "icon": "🐱",
+      "date_of_creation": "2024-02-10"
     },
     {
       "id": 7,
       "title": "Color Guessing Game",
       "component": "ColorGuessingGame",
       "path": "/projects/color-guessing-game",
-      "description": "heloo my color guessing game",
-      "icon": "",
-      "date_of_creation": "26-05-2025"
+      "description": "Test your color recognition skills with this interactive guessing game. Features RGB challenges, scoring system, and difficulty levels.",
+      "icon": "🌈",
+      "date_of_creation": "2024-02-15"
     },
     {
       "id": 8,
       "title": "Custom Slider",
       "component": "CustomSlider",
       "path": "/projects/custom-slider",
-      "description": "heloo my color custom slider",
-      "icon": "",
-      "date_of_creation": "26-05-2025"
+      "description": "Customizable range slider component with multiple handles, step controls, and value formatting. Perfect for filtering and data input.",
+      "icon": "🎚️",
+      "date_of_creation": "2024-02-20"
     },
     {
       "id": 9,
       "title": "Digital Clock",
       "component": "DigitalClock",
       "path": "/projects/digital-clock",
-      "description": "heloo my color digital clock",
-      "icon": "",
-      "date_of_creation": "26-05-2025"
+      "description": "Modern digital clock with multiple time zones, alarm functionality, and customizable display formats. Features 12/24 hour modes.",
+      "icon": "⏰",
+      "date_of_creation": "2024-02-25"
     },
     {
       "id": 10,
       "title": "BMI Calculator",
       "component": "BMICalculator",
       "path": "/projects/bmi-calculator",
-      "description": "heloo my bmi calculator",
-      "icon": "",
-      "date_of_creation": "26-05-2025"
+      "description": "Calculate Body Mass Index with health recommendations. Supports metric and imperial units with detailed health category explanations.",
+      "icon": "⚖️",
+      "date_of_creation": "2024-03-01"
     },
     {
       "id": 11,
       "title": "Expand Button",
       "component": "ExpandButton",
       "path": "/projects/expand-button",
-      "description": "heloo my expand button",
-      "icon": "",
-      "date_of_creation": "26-05-2025"
+      "description": "Interactive expandable button component with smooth animations. Features customizable content areas and transition effects.",
+      "icon": "🔽",
+      "date_of_creation": "2024-03-05"
     },
     {
       "id": 12,
       "title": "Blog Application",
       "component": "BlogApplication",
       "path": "/projects/blog-application",
-      "description": "heloo my blog application",
-      "icon": "",
-      "date_of_creation": "26-05-2025"
+      "description": "Full-featured blog platform with post creation, editing, and commenting system. Includes user authentication and rich text editor.",
+      "icon": "📝",
+      "date_of_creation": "2024-03-10"
     },
     {
       "id": 13,
       "title": "Count Down Timer",
       "component": "CountdownTimer",
       "path": "/projects/countdown-timer",
-      "description": "heloo my countdown timer",
-      "icon": "",
-      "date_of_creation": "27-05-2025"
+      "description": "Versatile countdown timer with custom duration settings, visual progress indicators, and notification alerts when time expires.",
+      "icon": "⏳",
+      "date_of_creation": "2024-03-15"
     },
     {
       "id": 14,
       "title": "Compound Interest Calculator",
       "component": "CompoundInterestCalculator",
       "path": "/projects/compound-interest-calculator",
-      "description": "heloo my Compound Interest Calculator",
-      "icon": "",
-      "date_of_creation": "27-05-2025"
+      "description": "Calculate compound interest with detailed breakdown of principal, interest, and total amount. Features multiple compounding frequencies and investment planning tools.",
+      "icon": "💹",
+      "date_of_creation": "2024-03-20"
     },
     {
       "id": 15,
-      "title": "Flim Finder",
+      "title": "Film Finder",
       "component": "FlimFinderLayout",
       "path": "/projects/flim-finder",
-      "description": "heloo my flim finder",
-      "icon": "",
-      "date_of_creation": "27-05-2025"
+      "description": "Discover movies and TV shows with advanced search filters. Features ratings, reviews, trailers, and personalized recommendations based on preferences.",
+      "icon": "🎥",
+      "date_of_creation": "2024-03-25"
     },
     {
       "id": 16,
       "title": "FAQ Accordion",
       "component": "FaqAccordion",
       "path": "/projects/faq-accordion",
-      "description": "heloo my FAQ Accordion",
-      "icon": "",
-      "date_of_creation": "27-05-2025"
+      "description": "Interactive FAQ section with smooth accordion animations. Features search functionality, categorized questions, and expandable content areas.",
+      "icon": "❓",
+      "date_of_creation": "2024-03-30"
+    },
+    {
+      "id": 17,
+      "title": "Weather App",
+      "component": "WeatherApp",
+      "path": "/projects/weather-app",
+      "description": "Check weather forecasts with beautiful UI",
+      "icon": "🌤️",
+      "date_of_creation": "02-08-2025"
+    },
+    {
+      "id": 18,
+      "title": "Password Generator",
+      "component": "PasswordGenerator",
+      "path": "/projects/password-generator",
+      "description": "Generate secure passwords with customizable options",
+      "icon": "🔐",
+      "date_of_creation": "02-08-2025"
+    },
+    {
+      "id": 19,
+      "title": "Quiz App",
+      "component": "QuizApp",
+      "path": "/projects/quiz-app",
+      "description": "Interactive quiz with timer and scoring",
+      "icon": "🧠",
+      "date_of_creation": "02-08-2025"
+    },
+    {
+      "id": 20,
+      "title": "Expense Tracker",
+      "component": "ExpenseTracker",
+      "path": "/projects/expense-tracker",
+      "description": "Track income and expenses with categories",
+      "icon": "💰",
+      "date_of_creation": "02-08-2025"
+    },
+    {
+      "id": 21,
+      "title": "Todo List",
+      "component": "TodoList",
+      "path": "/projects/todo-list",
+      "description": "Advanced todo list with priorities and categories",
+      "icon": "✅",
+      "date_of_creation": "02-08-2025"
+    },
+    {
+      "id": 22,
+      "title": "Music Player",
+      "component": "MusicPlayer",
+      "path": "/projects/music-player",
+      "description": "Beautiful music player with playlist and controls",
+      "icon": "🎵",
+      "date_of_creation": "02-08-2025"
+    },
+    {
+      "id": 23,
+      "title": "Image Gallery",
+      "component": "ImageGallery",
+      "path": "/projects/image-gallery",
+      "description": "Responsive image gallery with filters and modal view",
+      "icon": "📸",
+      "date_of_creation": "02-08-2025"
+    },
+    {
+      "id": 24,
+      "title": "Habit Tracker",
+      "component": "HabitTracker",
+      "path": "/projects/habit-tracker",
+      "description": "Track daily habits with streaks and progress",
+      "icon": "🎯",
+      "date_of_creation": "02-08-2025"
+    },
+    {
+      "id": 25,
+      "title": "Recipe Finder",
+      "component": "RecipeFinder",
+      "path": "/projects/recipe-finder",
+      "description": "Discover recipes with filters and detailed instructions",
+      "icon": "👨‍🍳",
+      "date_of_creation": "02-08-2025"
+    },
+    {
+      "id": 26,
+      "title": "URL Shortener",
+      "component": "UrlShortener",
+      "path": "/projects/url-shortener",
+      "description": "Create short URLs with custom aliases and analytics",
+      "icon": "🔗",
+      "date_of_creation": "02-08-2025"
+    },
+    {
+      "id": 26,
+      "title": "Pomodoro Timer",
+      "component": "PomodoroTimer",
+      "path": "/projects/pomodoro-timer",
+      "description": "Focus timer with work/break sessions and productivity tracking",
+      "icon": "⏰",
+      "date_of_creation": "02-08-2025"
+    },
+    {
+      "id": 27,
+      "title": "Markdown Editor",
+      "component": "MarkdownEditor",
+      "path": "/projects/markdown-editor",
+      "description": "Live markdown editor with preview, export, and document management",
+      "icon": "📝",
+      "date_of_creation": "02-08-2025"
+    },
+    {
+      "id": 28,
+      "title": "QR Generator",
+      "component": "QRGenerator",
+      "path": "/projects/qr-generator",
+      "description": "Generate custom QR codes with colors, sizes, and export options",
+      "icon": "📱",
+      "date_of_creation": "02-08-2025"
+    },
+    {
+      "id": 29,
+      "title": "Color Palette",
+      "component": "ColorPalette",
+      "path": "/projects/color-palette",
+      "description": "Generate beautiful color palettes with harmony rules and export",
+      "icon": "🎨",
+      "date_of_creation": "02-08-2025"
     }
   ]
 }

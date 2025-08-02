@@ -1,0 +1,13 @@
+// Global styles import - imports all SCSS modules in correct order
+
+// 1. Variables first (no dependencies)
+@import 'variable';
+
+// 2. Mixins (depends on variables)
+@import 'mixins';
+
+// 3. Utilities (depends on variables and mixins)
+@import 'utility';
+
+// 4. Global styles (depends on all above)
+@import 'global';

@@ -1,0 +1,81 @@
+// HabitTracker SCSS - Refactored to use centralized system
+@import '../../styles/import';
+
+// Component-specific styles only
+.habit-tracker {
+  // Habit completion buttons
+  .habit-day-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $border-color;
+    background: white;
+    transition: $transition-base;
+    
+    &:hover {
+      @include hover-scale;
+      box-shadow: $box-shadow-sm;
+    }
+    
+    &.completed {
+      background: $success;
+      border-color: $success;
+      color: white;
+      
+      &:hover {
+        background: darken($success, 10%);
+        border-color: darken($success, 15%);
+      }
+    }
+  }
+  
+  // Streak indicator with custom gradient
+  .streak-indicator {
+    background: linear-gradient(45deg, #ff6b6b, #feca57);
+    color: white;
+    font-weight: bold;
+    border-radius: $border-radius-pill;
+    padding: 0.25rem 0.75rem;
+    font-size: 0.875rem;
+  }
+  
+  // Color picker for habit categories
+  .color-picker {
+    width: 50px;
+    height: 40px;
+    border-radius: $border-radius;
+    border: 1px solid $border-color;
+    cursor: pointer;
+    transition: $transition-base;
+    
+    &:hover {
+      @include hover-scale(scale(1.05));
+    }
+  }
+  
+  // Habit progress visualization
+  .progress-circle {
+    position: relative;
+    
+    .progress-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-weight: bold;
+      font-size: 0.875rem;
+    }
+  }
+}  
+  // Responsive adjustments
+  @media (max-width: 768px) {
+    .habit-day-btn {
+      width: 35px;
+      height: 35px;
+    }
+    
+    .display-4 {
+      font-size: 2rem;
+    }
+  }
+

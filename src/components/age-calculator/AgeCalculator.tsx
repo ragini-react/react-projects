@@ -66,67 +66,133 @@ const AgeCalculator: React.FC = () => {
   };
 
   return (
-    <div className="d-flex vh-100 justify-content-center align-items-center bg-primary position-relative">
+    <div className="min-vh-100 bg-gradient d-flex justify-content-center align-items-center position-relative" style={{background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'}}>
       <BackButton />
-      <div className="bg-white p-4 rounded shadow" style={{ width: "350px" }}>
-        <h4 className="text-center mb-4">Age Calculator</h4>
-        <div className="d-flex justify-content-between mb-3">
-          <input
-            type="number"
-            className="form-control me-1"
-            placeholder="Date"
-            value={day}
-            onChange={(e) => setDay(e.target.value)}
-          />
-          <input
-            type="number"
-            className="form-control mx-1"
-            placeholder="Month"
-            value={month}
-            onChange={(e) => setMonth(e.target.value)}
-          />
-          <input
-            type="number"
-            className="form-control ms-1"
-            placeholder="Year"
-            value={year}
-            onChange={(e) => setYear(e.target.value)}
-          />
-        </div>
-        <div className="text-center">
-          <button className="btn btn-primary w-100" onClick={calculateAge}>
-            Submit
-          </button>
-        </div>
+      <div className="container">
+        <div className="row justify-content-center">
+          <div className="col-md-6 col-lg-5">
+            <div className="card shadow-lg border-0">
+              <div className="card-header bg-primary text-white text-center py-3">
+                <h4 className="mb-0 fw-bold">
+                  <i className="bi bi-calendar-date me-2"></i>
+                  Age Calculator
+                </h4>
+              </div>
+              <div className="card-body p-4">
+                <div className="row g-2 mb-4">
+                  <div className="col-4">
+                    <label className="form-label small text-muted fw-semibold">Day</label>
+                    <input
+                      type="number"
+                      className="form-control form-control-lg text-center"
+                      placeholder="DD"
+                      min="1"
+                      max="31"
+                      value={day}
+                      onChange={(e) => setDay(e.target.value)}
+                    />
+                  </div>
+                  <div className="col-4">
+                    <label className="form-label small text-muted fw-semibold">Month</label>
+                    <input
+                      type="number"
+                      className="form-control form-control-lg text-center"
+                      placeholder="MM"
+                      min="1"
+                      max="12"
+                      value={month}
+                      onChange={(e) => setMonth(e.target.value)}
+                    />
+                  </div>
+                  <div className="col-4">
+                    <label className="form-label small text-muted fw-semibold">Year</label>
+                    <input
+                      type="number"
+                      className="form-control form-control-lg text-center"
+                      placeholder="YYYY"
+                      min="1900"
+                      max={new Date().getFullYear()}
+                      value={year}
+                      onChange={(e) => setYear(e.target.value)}
+                    />
+                  </div>
+                </div>
+                
+                <div className="d-grid">
+                  <button 
+                    className="btn btn-primary btn-lg fw-semibold" 
+                    onClick={calculateAge}
+                    disabled={!day || !month || !year}
+                  >
+                    <i className="bi bi-calculator me-2"></i>
+                    Calculate Age
+                  </button>
+                </div>
 
-        {age && (
-          <div className="mt-4 text-start text-primary fw-semibold">
-            <h5 className="text-black mb-3 text-center">Your Age is:</h5>
-            <ul className="list-unstyled text-black small d-flex flex-column gap-2">
-              <li className="border p-2">
-                → {age.years} years {age.months} months {age.days} days
-              </li>
-              <li className="border p-2">
-                → {age.totalMonths} months {age.days} days
-              </li>
-              <li className="border p-2">
-                → {age.totalWeeks} weeks {age.totalDays % 7} days
-              </li>
-              <li className="border p-2">
-                → {age.totalDays.toLocaleString()} days
-              </li>
-              <li className="border p-2">
-                → {age.totalHours.toLocaleString()} hours
-              </li>
-              <li className="border p-2">
-                → {age.totalMinutes.toLocaleString()} minutes
-              </li>
-              <li className="border p-2">
-                → {age.totalSeconds.toLocaleString()} seconds
-              </li>
-            </ul>
+                {age && (
+                  <div className="mt-4">
+                    <div className="alert alert-success border-0 shadow-sm">
+                      <h5 className="alert-heading text-center mb-3">
+                        <i className="bi bi-check-circle me-2"></i>
+                        Your Age Results
+                      </h5>
+                      <div className="row g-3">
+                        <div className="col-12">
+                          <div className="bg-light rounded p-3 text-center">
+                            <h6 className="text-primary mb-2">Primary Age</h6>
+                            <div className="h5 mb-0 text-dark">
+                              {age.years} years, {age.months} months, {age.days} days
+                            </div>
+                          </div>
+                        </div>
+                        <div className="col-6">
+                          <div className="bg-light rounded p-3 text-center">
+                            <div className="text-muted small">Total Months</div>
+                            <div className="fw-bold text-primary">{age.totalMonths}</div>
+                          </div>
+                        </div>
+                        <div className="col-6">
+                          <div className="bg-light rounded p-3 text-center">
+                            <div className="text-muted small">Total Weeks</div>
+                            <div className="fw-bold text-primary">{age.totalWeeks}</div>
+                          </div>
+                        </div>
+                        <div className="col-6">
+                          <div className="bg-light rounded p-3 text-center">
+                            <div className="text-muted small">Total Days</div>
+                            <div className="fw-bold text-primary">{age.totalDays.toLocaleString()}</div>
+                          </div>
+                        </div>
+                        <div className="col-6">
+                          <div className="bg-light rounded p-3 text-center">
+                            <div className="text-muted small">Total Hours</div>
+                            <div className="fw-bold text-primary">{age.totalHours.toLocaleString()}</div>
+                          </div>
+                        </div>
+                        <div className="col-12">
+                          <div className="row g-2">
+                            <div className="col-6">
+                              <div className="bg-light rounded p-2 text-center">
+                                <div className="text-muted small">Minutes</div>
+                                <div className="fw-bold text-success small">{age.totalMinutes.toLocaleString()}</div>
+                              </div>
+                            </div>
+                            <div className="col-6">
+                              <div className="bg-light rounded p-2 text-center">
+                                <div className="text-muted small">Seconds</div>
+                                <div className="fw-bold text-success small">{age.totalSeconds.toLocaleString()}</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
           </div>
-        )}
+        </div>
       </div>
     </div>
   );

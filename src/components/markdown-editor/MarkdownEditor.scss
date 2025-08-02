@@ -1,0 +1,265 @@
+// Markdown Editor SCSS - Refactored to use centralized system
+@import '../../styles/import';
+
+.markdown-editor {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  .editor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid $border-color;
+
+    h1 {
+      margin: 0;
+      color: $dark;
+      font-size: 2rem;
+    }
+  }
+
+  .editor-controls {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    .template-dropdown select {
+      padding: 8px 12px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      background: white;
+      font-size: 14px;
+      cursor: pointer;
+      transition: border-color 0.2s ease;
+
+      &:hover {
+        border-color: $primary;
+      }
+
+      &:focus {
+        outline: none;
+        border-color: $primary;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+      }
+    }
+  }
+
+  .btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+
+    &.primary {
+      background-color: $primary;
+      color: white;
+
+      &:hover {
+        background-color: darken($primary, 10%);
+      }
+    }
+
+    &.secondary {
+      background-color: $secondary;
+      color: white;
+
+      &:hover {
+        background-color: darken($secondary, 10%);
+      }
+    }
+  }
+
+  .editor-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    height: calc(100vh - 200px);
+    min-height: 600px;
+  }
+
+  .editor-pane,
+  .preview-pane {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid $border-color;
+    border-radius: 8px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    h3 {
+      margin: 0;
+      padding: 15px 20px;
+      background: $light;
+      border-bottom: 1px solid $border-color;
+      color: $dark;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+  }
+
+  .markdown-input {
+    flex: 1;
+    padding: 20px;
+    border: none;
+    resize: none;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    line-height: 1.6;
+    background: #fafbfc;
+    color: $dark;
+    outline: none;
+
+    &:focus {
+      background: white;
+    }
+  }
+
+  .markdown-preview {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: white;
+    line-height: 1.6;
+    color: $dark;
+    @include custom-scrollbar;
+
+    // Preview content styling
+    h1 {
+      color: $dark;
+      border-bottom: 2px solid $border-color;
+      padding-bottom: 10px;
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    h2 {
+      color: lighten($dark, 10%);
+      border-bottom: 1px solid $border-color;
+      padding-bottom: 8px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    h3 {
+      color: lighten($dark, 10%);
+      margin-top: 25px;
+      margin-bottom: 12px;
+      font-size: 1.25rem;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    strong {
+      color: $dark;
+      font-weight: 600;
+    }
+
+    em {
+      color: #6c757d;
+    }
+
+    code {
+      background: #f1f2f6;
+      color: #e74c3c;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+      font-size: 0.9em;
+    }
+
+    pre {
+      background: #2c3e50;
+      color: #ecf0f1;
+      padding: 20px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin: 20px 0;
+      border-left: 4px solid $primary;
+
+      code {
+        background: none;
+        color: inherit;
+        padding: 0;
+        font-size: 14px;
+        line-height: 1.5;
+      }
+    }
+
+    blockquote {
+      border-left: 4px solid $primary;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background: $light;
+      color: #6c757d;
+      font-style: italic;
+      border-radius: 0 4px 4px 0;
+    }
+
+    ul,
+    ol {
+      margin: 15px 0;
+      padding-left: 30px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+
+    a {
+      color: $primary;
+      text-decoration: none;
+      border-bottom: 1px solid transparent;
+      transition: border-color 0.2s ease;
+
+      &:hover {
+        border-bottom-color: $primary;
+      }
+    }
+  }
+
+  // Responsive design
+  @media (max-width: 768px) {
+    padding: 10px;
+    
+    .editor-header {
+      flex-direction: column;
+      gap: 15px;
+      align-items: stretch;
+    }
+    
+    .editor-controls {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    
+    .editor-container {
+      grid-template-columns: 1fr;
+      height: auto;
+      min-height: auto;
+    }
+    
+    .editor-pane,
+    .preview-pane {
+      min-height: 400px;
+    }
+    
+    .markdown-input {
+      font-size: 16px; // Prevent zoom on iOS
+    }
+  }
+}

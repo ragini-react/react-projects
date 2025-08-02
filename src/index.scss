@@ -1,0 +1,36 @@
+// Main index.scss - Import centralized SCSS system
+// Bootstrap CSS is imported in index.tsx
+
+// Import our centralized SCSS system
+@import 'styles/import';
+
+// Additional global overrides can be added here if needed
+body {
+  margin: 0;
+}
+
+.card {
+  transition: box-shadow 0.2s ease-in-out;
+  
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  }
+}
+
+// Utility classes
+.glass-effect {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.text-gradient {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
